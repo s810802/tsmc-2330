@@ -1,0 +1,98 @@
+<title>台積電 2330 行情速報</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;600;800&family=IBM+Plex+Mono:wght@500&display=swap">
+<style>
+:root{
+  --bg:#f5f6f7;--panel:#ffffff;--fg:#14181c;--muted:#5b6670;--line:#dde1e5;
+  --up:#d6302b;--down:#0c8a4a;--accent:#1f4e79;--warn-bg:#fff6dd;--warn-fg:#6a4b00;
+  --font:"Noto Sans TC","PingFang TC","Microsoft JhengHei",system-ui,sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,Consolas,monospace;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#0f1316;--panel:#171d22;--fg:#e8ecef;--muted:#9aa5ae;--line:#2a333a;
+  --up:#ff6b64;--down:#4cd08a;--accent:#7fb2e0;--warn-bg:#2b2410;--warn-fg:#f0d58a;color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0f1316;--panel:#171d22;--fg:#e8ecef;--muted:#9aa5ae;--line:#2a333a;
+  --up:#ff6b64;--down:#4cd08a;--accent:#7fb2e0;--warn-bg:#2b2410;--warn-fg:#f0d58a;color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--fg);font:16px/1.65 var(--font);
+  padding-block:28px 40px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+main{max-width:760px;margin:0 auto;display:grid;gap:20px}
+h1{font-size:1.6rem;margin:0;text-wrap:balance;font-weight:800}
+h2{font-size:1.05rem;margin:0 0 10px;letter-spacing:.04em}
+.sub{color:var(--muted);font-size:.9rem;margin:4px 0 0}
+.panel{background:var(--panel);border:1px solid var(--line);border-radius:6px;padding:18px}
+.price{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 16px}
+.price .big{font:500 3rem/1 var(--mono);color:var(--down);font-variant-numeric:tabular-nums}
+.price .chg{font:500 1.15rem var(--mono);color:var(--down);font-variant-numeric:tabular-nums}
+.tbl{overflow-x:auto}
+table{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums}
+th,td{text-align:left;padding:9px 8px;border-bottom:1px solid var(--line);vertical-align:top;font-size:.95rem}
+th{color:var(--muted);font-weight:600;white-space:nowrap}
+td.num{font-family:var(--mono);white-space:nowrap}
+td.src{color:var(--muted);font-size:.85rem}
+a{color:var(--accent)}
+ul.news{list-style:none;margin:0;padding:0;display:grid;gap:14px}
+.news li{padding-bottom:14px;border-bottom:1px solid var(--line)}
+.news li:last-child{border:0;padding:0}
+.meta{color:var(--muted);font-size:.85rem}
+.note{background:var(--warn-bg);color:var(--warn-fg);border-radius:6px;padding:12px 14px;font-size:.9rem}
+footer{text-align:center;color:var(--muted);font-size:.9rem;border-top:1px solid var(--line);padding-top:16px}
+footer strong{color:var(--fg)}
+</style>
+
+<main>
+  <header>
+    <h1>台積電 2330　今日行情速報</h1>
+    <p class="sub">最近一個交易日：2026-11-02（週一）｜資料整理日：2026-11-03</p>
+  </header>
+
+  <section class="panel" aria-label="收盤價">
+    <div class="price">
+      <span class="big">2,330.00</span>
+      <span class="chg">▼ 40.00（-1.69%）</span>
+    </div>
+    <p class="sub">2026-11-02 收盤，單位：新台幣元。台股慣例：紅漲綠跌。</p>
+  </section>
+
+  <section class="panel">
+    <h2>行情數據</h2>
+    <div class="tbl">
+    <table>
+      <thead><tr><th>項目</th><th>數值</th><th>日期</th><th>來源</th></tr></thead>
+      <tbody>
+        <tr><th>收盤價</th><td class="num">2,330.00 元</td><td>2026-11-02</td><td class="src"><a href="https://www.twse.com.tw/exchangeReport/STOCK_DAY?response=json&date=20261101&stockNo=2330" target="_blank" rel="noopener">臺灣證券交易所 個股日成交資訊</a></td></tr>
+        <tr><th>漲跌</th><td class="num">-40.00 元</td><td>2026-11-02</td><td class="src">同上</td></tr>
+        <tr><th>漲跌幅</th><td class="num">-1.69%</td><td>2026-11-02</td><td class="src">依證交所收盤價 2,330 與漲跌 -40（前一日收盤 2,370）自行計算：40÷2,370</td></tr>
+        <tr><th>成交量</th><td class="num">41,165,068 股（約 41,165 張）</td><td>2026-11-02</td><td class="src">同上</td></tr>
+        <tr><th>成交金額</th><td class="num">95,950,896,264 元（約 959.51 億）</td><td>2026-11-02</td><td class="src">同上</td></tr>
+        <tr><th>開 / 高 / 低</th><td class="num">2,310 / 2,345 / 2,310 元</td><td>2026-11-02</td><td class="src">同上</td></tr>
+        <tr><th>成交筆數</th><td class="num">298,087 筆</td><td>2026-11-02</td><td class="src">同上</td></tr>
+        <tr><th>2026-11-03 行情</th><td class="num">查無資料</td><td>2026-11-03</td><td class="src">撰寫時尚無當日收盤資料</td></tr>
+      </tbody>
+    </table>
+    </div>
+    <p class="note" style="margin-top:12px">提醒：部分網站（如 Yahoo 股市、HiStock）顯示的成交量與證交所略有出入，本頁以證交所為準。</p>
+  </section>
+
+  <section class="panel">
+    <h2>近期新聞（2 則）</h2>
+    <ul class="news">
+      <li>
+        <a href="https://hao.cnyes.com/post/272717" target="_blank" rel="noopener">台積電：AI需求旺盛加快擴產　全球20座晶圓廠依計畫推進建設</a>
+        <div class="meta">2026-10-16｜鉅亨號（網友創作者帳號「小小天下」，原始來源註明為芯聞眼）</div>
+        <div>10 月 15 日法說會上，董事長魏哲家表示 AI 與先進製程需求強勁，全球近 20 座晶圓廠建設中，供給仍低於客戶需求。</div>
+      </li>
+      <li>
+        <a href="https://www.sinotrade.com.tw/richclub/calendar/%E5%8F%B0%E7%A9%8D%E9%9B%BB-2330-%E6%B3%95%E8%AA%AA-%E7%AC%AC%E4%B8%89%E5%AD%A3EPS-29-43%E5%85%83%E5%B9%B4%E5%A2%9E68-7--%E7%AC%AC%E5%9B%9B%E5%AD%A3%E7%BE%8E%E5%85%83%E7%87%9F%E6%94%B6%E7%9C%8B523%E5%84%84%E8%87%B3543%E5%84%84%E7%BE%8E%E5%85%83-%E5%85%A8%E5%B9%B4%E5%B9%B4%E5%A2%9E%E7%B4%8444--2%E5%A5%88%E7%B1%B3%E6%94%BE%E9%87%8F%E7%A8%80%E9%87%8B%E6%AF%9B%E5%88%A9%E7%8E%87-%E8%82%A1%E5%B8%82%E8%A9%B1%E9%A1%8C-6a588173546795e51e5f5b07" target="_blank" rel="noopener">台積電（2330）法說／第三季EPS 29.43元年增68.7%，第四季美元營收看523億至543億美元，全年年增約44%</a>
+        <div class="meta">2026-10-19（頁面更新日；法說會舉行於 2026-10-15）｜永豐金證券 股市話題</div>
+        <div>第三季營收約新台幣 1.49 兆元，EPS 29.43 元；第四季預估營收 523 億至 543 億美元，全年美元營收預估成長約 44%。</div>
+      </li>
+    </ul>
+  </section>
+
+  <footer>
+    <p><strong>僅供課堂示範，非投資建議</strong></p>
+    <p>數字為靜態寫入，不會自動更新。以官方資料為準。</p>
+  </footer>
+</main>
